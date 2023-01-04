@@ -1,0 +1,149 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+fieldset {
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+.fm {
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.fm1 {
+    margin-top: 10px;
+}
+
+label {
+    position: absolute;
+    left: 8px;
+    font-weight: 600;
+    /* opacity: 0.8; */
+}
+
+input {
+    height: 35px;
+    padding: 0px 8px;
+    border: 2px solid black;
+    font-weight: 600;
+}
+
+select#group {
+    height: 35px;
+    padding: 0px 8px;
+    text-align: right;
+    border: 2px solid black;
+    font-weight: 600;
+}
+
+#group:focus,
+#gropu:focus+label {
+    border: 1px solid blue;
+    color: blue;
+}
+
+.group {
+    pointer-events: none;
+}
+
+#area {
+    height: 60px;
+    outline: none;
+    padding: 3px 8px;
+}
+
+@media screen and (min-width:768px) {
+    input {
+        width: 400px;
+    }
+
+    select#group {
+        width: 400px;
+        outline: none;
+    }
+
+    #area {
+        width: 400px;
+    }
+}
+
+input:focus+label,
+input:valid+label {
+    transform: translateY(-18px);
+    font-size: 12px;
+    background-color: white;
+    left: 8px;
+    color: blue;
+    opacity: 1;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+}
+
+#area:focus+label,
+#area:valid+label {
+    transform: translateY(-30px);
+    font-size: 12px;
+    background-color: white;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+}
+
+input[type="submit"],
+input[type="reset"] {
+    cursor: pointer;
+}
+
+legend {
+    margin-left: 10px;
+}
+
+img {
+    margin-top: -555px;
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.shake {
+    animation-name: shake;
+    animation-duration: 100ms;
+    animation-iteration-count: 3;
+}
+
+@keyframes shake {
+    from {
+        transform: translateX(3px);
+    }
+
+    to {
+        transform: translateX(-3px);
+    }
+}
+
+.hid {
+    font-size: 10px;
+    margin-top: -10px;
+    text-align: right;
+    padding: 0px 5px;
+    color: red;
+}

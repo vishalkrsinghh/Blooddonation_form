@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood_Donation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Baloo+Bhai+2&family=Comic+Neue:wght@700&family=DotGothic16&family=Poppins:wght@300&family=Source+Sans+Pro&family=Ubuntu:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1 style="text-align:center;"> Blood Donation Form</h1>
+    <div class="cont">
+        <form action="">
+
+            <fieldset>
+
+                <legend> Details:</legend>
+                <div class="fm fm1"> <input type="text" id="name" autocomplete="off" required> <label for="name">Full
+                        Name:</label> </div>
+                <div hidden class="hid">Plese Enter Correct Name</div>
+                <div class="fm"> <input type="text" autocomplete="off" required id="mail"> <label
+                        for="mail">Email:</label>
+                </div>
+                <div hidden class="hid">Plese Enter Correct Email</div>
+                <div class="fm"> <input type="tel" autocomplete="off" required id="tel"> <label for="tel">Phone
+                        Number:</label> </div>
+                <div hidden class="hid">Plese Enter Correct Phone Number</div>
+                <div class="fm"> <select name="" id="group">
+                        <option value="A+">A+</option>
+                    </select> <label for="group" class="group">Blood Group:</label> </div>
+
+                <div class="fm"> <input type="text" autocomplete="off" required id="address"> <label for="address">Enter
+                        Your Address:</label> </div>
+
+                <div class="fm"> <input type="text" autocomplete="off" id="area"> <label for="area"
+                        class="group grpLbl">Any Other
+                        Details Regarding Your Medical Health:</label> </div>
+
+                <div class="fm"> <input type="reset" value="Reset">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+                <img src="Bdonation4.bmp" alt="" id="img" style="float: right;">
+            </fieldset>
+
+        </form>
+
+    </div>
+
+  
+</body>
+
+</html>
