@@ -13,11 +13,11 @@ for (let i = 0; i < bGroup.length; i++) {
     select.append(opt);
 }
 
-let name = document.getElementById("name");
+let namee = document.getElementById("name");
 let phone = document.getElementById("tel");
 let mail = document.getElementById("mail");
 let telReg = /^[7-9][0-9]{9}$/;
-let nameReg = /^[a-zA-Z]{3,30}$/;
+let nameReg = /^[a-zA-Z\s]{3,30}$/;
 let emailReg = /^[a-z0-9]*\.?\-?\_?[a-z0-9]{1,15}\@[a-z^0-9]*\.[a-z]{2,3}$/i;
 let submit = document.getElementById("submit");
 submit.addEventListener("click", func);
@@ -37,16 +37,16 @@ function func(e) {
         phone.className = "shake";
         hide[2].removeAttribute("hidden");
     }
-    if (nameReg.test(name.value)) {
+    if (nameReg.test(namee.value)) {
         console.log("CORRECT NAME");
-        name.style.border = "1px solid green";
+        namee.style.border = "1px solid green";
         hide[0].setAttribute("hidden", "true")
-        name.classList.remove("shake");
+        namee.classList.remove("shake");
     }
     else {
         console.log("INCORRECT  NAME");
-        name.style.border = "1px solid red";
-        name.className = "shake";
+        namee.style.border = "1px solid red";
+        namee.className = "shake";
         hide[0].removeAttribute("hidden");
     }
     if (emailReg.test(mail.value)) {
@@ -62,10 +62,10 @@ function func(e) {
         hide[1].removeAttribute("hidden");
     }
 
-    if (telReg.test(phone.value) == false && nameReg.test(name.value) == false && emailReg.test(mail.value) == false) {
+    if (telReg.test(phone.value) == false && nameReg.test(namee.value) == false && emailReg.test(mail.value) == false) {
         image.style.marginTop = "-567px";
     }
-   else if (telReg.test(phone.value) == true && nameReg.test(name.value) == true && emailReg.test(mail.value) == true) {
+   else if (telReg.test(phone.value) == true && nameReg.test(namee.value) == true && emailReg.test(mail.value) == true) {
         image.style.marginTop = "-550px";
     }
 
