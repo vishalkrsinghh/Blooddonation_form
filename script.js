@@ -3,6 +3,9 @@
 let hide = document.getElementsByClassName("hid");
 let image = document.getElementById("img");
 let select = document.getElementById("group");
+let pswd= document.getElementById("pswd");
+let ey1= document.getElementById("ey_1");
+let ey2= document.getElementById("ey_2");
 let bGroup = ["A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
 
 for (let i = 0; i < bGroup.length; i++) {
@@ -70,3 +73,21 @@ function func(e) {
     }
 
 }
+
+
+let showHide=()=>{
+    if(pswd.getAttribute("type")=="password"){
+        pswd.setAttribute("type", "text");
+        ey1.style.display="block";
+        ey2.style.display="none";
+        
+    }
+    else{
+        pswd.setAttribute("type", "password");
+        ey1.style.display="none";
+        ey2.style.display="block";
+    }
+}
+
+ey2.addEventListener("click", showHide);
+ey1.addEventListener("click", showHide);

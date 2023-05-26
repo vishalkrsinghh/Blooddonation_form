@@ -46,6 +46,11 @@ input {
     font-weight: 600;
 }
 
+.ey {
+    position: absolute;
+    right: 10px;
+}
+
 select#group {
     height: 35px;
     padding: 0px 8px;
@@ -119,7 +124,7 @@ legend {
 }
 
 img {
-    margin-top: -555px;
+    margin-top: -579px;
     pointer-events: none;
     opacity: 0.2;
 }
